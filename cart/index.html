@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+        <a href="../web-main/index.html" target="_blank"><img src="../images/logo-colored.svg" alt="logo-colored"></a>
+    </div>
+
+    <div class="nav-right">
+        <a href="#">Profile</a>
+        <a href="#">Message</a>
+        <a href="#">Order</a>
+        <a href="#">MyCart</a>
+    </div>
+  </nav>
+  <h2 id="cart-heading">My cart (3)</h2>
+<div class="cart-container">
+  <!-- LEFT: Cart Items -->
+  <section class="cart-items">
+   <div class="cart-list">
+
+    <!-- Cart Item 1 -->
+    <div class="cart-card">
+      <img src="../images/cloth1.jpg" alt="Product" class="item-img" />
+      <div class="item-info">
+        <h4>T-shirts with multiple colors, for men and lady</h4>
+        <p>Size: medium, Color: blue, Material: Plastic</p>
+        <p class="seller">Seller: Artel Market</p>
+        <div class="item-actions">
+          <button class="btn remove">Remove</button>
+          <button class="btn save">Save for later</button>
+        </div>
+      </div>
+      <div class="item-summary">
+        <strong>$78.99</strong>
+        <select>
+          <option>Qty: 1</option>
+          <option selected>Qty: 9</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="cart-card">
+      <img src="../images/cloth2.jpg" alt="Product" class="item-img" />
+      <div class="item-info">
+        <h4>T-shirts with multiple colors, for men and lady</h4>
+        <p>Size: medium, Color: blue, Material: Plastic</p>
+        <p class="seller">Seller: Artel Market</p>
+        <div class="item-actions">
+          <button class="btn remove">Remove</button>
+          <button class="btn save">Save for later</button>
+        </div>
+      </div>
+      <div class="item-summary">
+        <strong>$78.99</strong>
+        <select>
+          <option>Qty: 1</option>
+          <option selected>Qty: 9</option>
+        </select>
+      </div>
+    </div>
+    <div class="cart-card">
+      <img src="../images/cloth3.jpg" alt="Product" class="item-img" />
+      <div class="item-info">
+        <h4>T-shirts with multiple colors, for men and lady</h4>
+        <p>Size: medium, Color: blue, Material: Plastic</p>
+        <p class="seller">Seller: Artel Market</p>
+        <div class="item-actions">
+          <button class="btn remove">Remove</button>
+          <button class="btn save">Save for later</button>
+        </div>
+      </div>
+      <div class="item-summary">
+        <strong>$78.99</strong>
+        <select>
+          <option>Qty: 1</option>
+          <option selected>Qty: 9</option>
+        </select>
+      </div>
+    </div>
+    <div class="button-below">
+        <button class="shop">Back to Shop</button>
+        <button class="remove-all">Remove all</button>
+    </div>
+</div>
+  </section>
+
+  <aside class="cart-summary">
+    <div class="coupon-box">
+  <h4>Have a coupon?</h4>
+  <div class="coupon-row">
+    <input type="text" placeholder="Add coupon" />
+    <button class="apply-btn">Apply</button>
+  </div>
+</div>
+
+
+    <div class="summary-pricing">
+      <div><span>Subtotal:</span><span>$1403.97</span></div>
+      <div><span>Discount:</span><span class="red">- $60.00</span></div>
+      <div id="tax"><span>Tax:</span><span class="green">+ $14.00</span></div>
+      <div class="total"><span>Total:</span><span>$1357.97</span></div>
+      <button class="checkout-btn">Checkout</button>
+      
+      <div class="payment-logos">
+        <img src="../images/Logo.png" alt="Visa" />
+        <img src="../images/Logo1.png" alt="Mastercard" />
+        <img src="../images/Logo2.png" alt="PayPal" />
+        <img src="../images/Logo3.png" alt="ApplePay" />
+        <img src="../images/Logo4.png" alt="ApplePay" />
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+<section class="recommended-section">
+    <div class="related">
+        <h3>Save for later</h3>
+        <div class="recommended-grid">
+          <div class="recommended-card">
+            <img src="../images/cloth6.jpg" alt="Product 1">
+            <p class="price">$32.00</p>
+            <p class="name">Blue leather wallet</p>
+            <button class="move-to-cart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</button>
+        </div>
+        <div class="recommended-card">
+            <img src="../images/tech8.jpg" alt="Product 2">
+            <p class="name">Silver Smart watch</p>
+            <p class="price">$32.00</p>
+            <button class="move-to-cart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</button>
+        </div>
+        <div class="recommended-card">
+            <img src="../images/tech9.jpg" alt="Product 3">
+            <p class="name">White Headphones</p>
+            <p class="price">$32.00</p>
+            <button class="move-to-cart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</button>
+        </div>
+        <div class="recommended-card">
+            <img src="../images/cloth4.jpg" alt="Product 4">
+            <p class="name">Blue Denim Shorts</p>
+            <p class="price">$32.00</p>
+            <button class="move-to-cart"><i class="fa-solid fa-cart-shopping"></i> Move to cart</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+    <div class="bluediscount">
+        <div class="bluediscounttext">
+            <h3>Super discount on more than 100 USD</h3>
+            <p>Have you ever finally just write dummy info</p>
+        </div>
+        <button class="bluediscountBtn">Shop Now</button>
+    </div>
+
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" target="_blank"><img src="../images/logo-colored.svg" alt="logo-colored"></a>
+      <p>Best information about the company is provided here at this website</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Find store</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Money Refund</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For Users</h4>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <!-- QR & App Download -->
+    <div class="footer-apps">
+      <h4>Download App</h4>
+      <div class="store-badges">
+        <img src="../images/Group.png" alt="App Store" />
+        <img src="../images/Group1.png" alt="Google Play" />
+      </div>
+    </div>
+  </div>
+
+</footer>
+  <p id="footer-bottom">&copy; 2025 Exclusive. All rights reserved.</p>
+
+  <script src="app.js"></script>

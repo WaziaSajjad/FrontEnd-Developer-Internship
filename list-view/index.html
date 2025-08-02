@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Web-List-View</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-left">
+        <a href="../web-main/index.html" target="_blank"><img src="../images/logo-colored.svg" alt="logo-colored"></a>
+    </div>
+
+    <div class="nav-center">
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <select class="category-select">
+        <option>All Categories</option>
+        <option>Books</option>
+        <option>Clothing</option>
+        <option>Electronics</option>
+        </select>
+        <button class="search-button">Search</button>
+    </div>
+    </div>
+
+    <div class="nav-right">
+        <a href="#">Profile</a>
+        <a href="#">Message</a>
+        <a href="#">Order</a>
+        <a href="../cart/index.html">MyCart</a>
+    </div>
+  </nav>
+
+  <div class="menu-bar">
+    <ul class="menu-list">
+      <li><a href="#">All category</a></li>
+      <li><a href="#">Hot offers</a></li>
+      <li><a href="#">Gift boxes</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Menu item</a></li>
+      <li><a href="#">Help ▼</a></li>
+
+      <div class="menu-right">
+        <li><a href="#">English, USD ▼</a></li>
+        <li><a href="#">Ship to ▼</a></li>
+      </div>
+    </ul>
+  </div>
+
+  <!-- Breadcrumb / History Tabs -->
+    <div class="breadcrumb">
+        <a href="../web-main/index.html">Home</a> &gt;
+        <a href="#">Tech</a> &gt;
+        <!-- <a href="#">Men's Wear</a> &gt; -->
+        <span>Mobile accessories</span>
+    </div>
+
+  <!-- Main Content Wrapper -->
+<div class="main-content">
+  
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Category</h3>
+    <ul id="category-list">
+      <li><a href="#">Mobile accessory</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Smartphones</a></li>
+      <li><a href="#">Modern tech</a></li>
+      
+      <li class="extra hidden">Home appliances</li>
+      <li class="extra hidden">Gaming</li>
+      
+      <li id="see-all">
+        <a href="#" onclick="toggleSeeMore('category-list'); return false;">See all</a>
+      </li>
+    </ul>
+    
+    <h3>Brands</h3>
+    <ul>
+      <li><input type="checkbox"> Samsung</li>
+      <li><input type="checkbox"> Apple</li>
+      <li><input type="checkbox"> Huawei</li>
+
+      <li class="extra hidden">Lenovo</li>
+      <li class="extra hidden">Pocco</li>
+      
+      <li id="see-all">
+        <a href="#" onclick="toggleSeeMore('category-list'); return false;">See all</a>
+      </li>
+    </ul>
+    
+    <h3>Features</h3>
+    <ul>
+      <li><input type="checkbox"> Metallic</li>
+      <li><input type="checkbox"> Plastic cover</li>
+      <li><input type="checkbox"> 8 GB RAM</li>
+
+      <li class="extra hidden">Superr power</li>
+      <li class="extra hidden">Large Memory</li>
+      
+      <li id="see-all">
+        <a href="#" onclick="toggleSeeMore('category-list'); return false;">See all</a>
+      </li>
+    </ul>
+
+    <h3>Price Range</h3>
+    <input type="range" min="0" max="2000" step="50">
+    <div class="price-range">
+        <div class="mindiv">
+            <label for="min-price">Min</label>
+            <input type="number" id="min-price" placeholder="0" class="price-input">
+        </div>
+        <!-- <span>-</span> -->
+        <div class="maxdiv">
+            <label for="max-price">Max</label>
+            <input type="number" id="max-price" placeholder="999999" class="price-input">
+        </div>
+    </div>
+    <button class="apply-btn">Apply</button>
+
+    <h3>Condition</h3>
+    <ul>
+        <li><input type="radio"> Any</li>
+        <li><input type="radio"> Refurbished</li>
+        <li><input type="radio"> Brand new</li>
+        <li><input type="radio"> Old items</li>
+    </ul>
+
+
+    <h3>Rating</h3>
+    <ul class="rating">
+      <li><input type="checkbox" name="rating"> ★★★★★</li>
+      <li><input type="checkbox" name="rating"> ★★★★☆</li>
+      <li><input type="checkbox" name="rating"> ★★★☆☆</li>
+    </ul>
+  </aside>
+
+  <!-- Product listing will go here -->
+  <section class="product-list">
+  <div class="product-list-header">
+    <h2>12,911 items in <strong>Mobile accessory</strong></h2>
+    <div class="sort-controls">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option>Best match</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Top Rated</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Product Card -->
+  
+  <article class="product-card">
+    <div class="product-img-wrap">
+      <img src="../images/tech1.jpg" alt="Red Smart Phone">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">
+        <a href="#">Red Smart Phone</a>
+      </h3>
+      
+      <div class="product-price-row">
+        <span class="price">$590.00</span>
+        <span class="old-price">$1,128.00</span>
+        <span class="shipping">Free Shipping</span>
+      </div>
+
+      <div class="product-meta-row">
+        <span class="rating">★★★★★</span>
+        <span class="orders">2.4k orders</span>
+      </div>
+
+      <p class="product-desc">
+        24h battery life, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit.
+      </p>
+      
+      <a href="../details/index.html" class="details-link">View details</a>
+    </div>
+    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+  </article>
+  
+  <article class="product-card">
+    <div class="product-img-wrap">
+      <img src="../images/tech3.jpg" alt="black Smart Phone">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">
+        <a href="#">Black Smart Phone</a>
+      </h3>
+      
+      <div class="product-price-row">
+        <span class="price">$670.00</span>
+        <span class="shipping">Free Shipping</span>
+      </div>
+
+      <div class="product-meta-row">
+        <span class="rating">★★★★★</span>
+        <span class="orders">2.4k orders</span>
+      </div>
+      
+      <p class="product-desc">
+        Great camera quality, Lorem ipsum dolor sit amet consectetur.
+      </p>
+      
+      <a href="#" class="details-link">View details</a>
+    </div>
+    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+  </article>
+  
+  <article class="product-card">
+    <div class="product-img-wrap">
+      <img src="../images/tech2.jpg" alt="Black Tablet">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">
+        <a href="#">Black Tablet</a>
+      </h3>
+
+      <div class="product-price-row">
+        <span class="price">$430.00</span>
+        <span class="shipping">Free Shipping</span>
+      </div>
+      
+      <div class="product-meta-row">
+        <span class="rating">★★★★★</span>
+        <span class="orders">2.4k orders</span>
+      </div>
+      
+      <p class="product-desc">
+        Large screen, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, laudantium.
+      </p>
+      
+      <a href="#" class="details-link">View details</a>
+    </div>
+    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+  </article>
+  
+  <article class="product-card">
+    <div class="product-img-wrap">
+    <img src="../images/tech7.jpg" alt="Silver Laptop">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">
+      <a href="#">Silver Laptop</a>
+    </h3>
+    
+    <div class="product-price-row">
+      <span class="price">$990.99</span>
+      <span class="shipping">Free Shipping</span>
+    </div>
+
+    <div class="product-meta-row">
+      <span class="rating">★★★★★</span>
+      <span class="orders">2.4k orders</span>
+    </div>
+    
+    <p class="product-desc">
+      High Speed, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, officia
+    </p>
+
+    <a href="#" class="details-link">View details</a>
+  </div>
+  <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+</article>
+
+<article class="product-card">
+  <div class="product-img-wrap">
+    <img src="../images/tech8.jpg" alt="Smart Watch">
+  </div>
+  <div class="product-info">
+    <h3 class="product-title">
+      <a href="#">Smart Watch, White Band</a>
+    </h3>
+
+    <div class="product-price-row">
+      <span class="price">$108.99</span>
+      <span class="shipping">Free Shipping</span>
+    </div>
+
+    <div class="product-meta-row">
+      <span class="rating">★★★★☆</span>
+      <span class="orders">154 orders</span>
+      <span class="verified">Verified Supplier</span>
+    </div>
+
+    <p class="product-desc">
+      24MP sensor, Wi-Fi ready. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+
+    <a href="#" class="details-link">View details</a>
+  </div>
+  <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+</article>
+<article class="product-card">
+    <div class="product-img-wrap">
+      <img src="../images/tech9.jpg" alt="Wireless Earbuds Pro">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">
+        <a href="#">Wireless Earbuds Pro Noise Canceling</a>
+      </h3>
+
+      <div class="product-price-row">
+        <span class="price">$59.00</span>
+        <span class="shipping">Free Shipping</span>
+      </div>
+
+      <div class="product-meta-row">
+        <span class="rating">★★★★★</span>
+        <span class="orders">3.2k orders</span>
+      </div>
+
+      <p class="product-desc">
+        True wireless Bluetooth 5.3 earbuds with ANC and charging case (24h battery).
+      </p>
+
+      <a href="#" class="details-link">View details</a>
+    </div>
+    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+  </article>
+
+
+  <!-- Pagination -->
+  <nav class="pagination">
+    <button class="page-btn current">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn next">Next ›</button>
+  </nav>
+</section>
+
+</div>
+
+
+  <div class="subscribe">
+    <h3>Subscribe to our newsletter</h3>
+    <p>Set daily news on upcoming offers from many suppliers all over the world</p>
+    <div class="email">
+      <i class="fa-regular fa-envelope email-icon"></i>
+      <input type="text" placeholder="Email">
+      <button id="subscribe">Subscribe</button>
+      </div>
+  </div>
+
+<footer class="main-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" target="_blank"><img src="../images/logo-colored.svg" alt="logo-colored"></a>
+      <p>Best information about the company is provided here at this website</p>
+    </div>
+
+    <!-- List Columns -->
+    <div class="footer-column">
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Find store</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Money Refund</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Conditions</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For Users</h4>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Track Order</a></li>
+      </ul>
+    </div>
+
+    <!-- QR & App Download -->
+    <div class="footer-apps">
+      <h4>Download App</h4>
+      <div class="store-badges">
+        <img src="../images/Group.png" alt="App Store" />
+        <img src="../images/Group1.png" alt="Google Play" />
+      </div>
+    </div>
+  </div>
+
+</footer>
+  <p id="footer-bottom">&copy; 2025 Exclusive. All rights reserved.</p>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
