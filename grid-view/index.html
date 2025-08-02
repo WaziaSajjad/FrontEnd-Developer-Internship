@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Web-List-View</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -59,8 +61,8 @@
         <span>Mobile accessories</span>
     </div>
 
-  <!-- Main Content Wrapper -->
-<div class="main-content">
+    
+    <div class="main-content">
   
   <!-- Sidebar -->
   <aside class="sidebar">
@@ -139,7 +141,6 @@
     </ul>
   </aside>
 
-  <!-- Product listing will go here -->
   <section class="product-list">
   <div class="product-list-header">
     <h2>12,911 items in <strong>Mobile accessory</strong></h2>
@@ -153,179 +154,204 @@
       </select>
     </div>
   </div>
-
-  <!-- Product Card -->
-  
-  <article class="product-card">
-    <div class="product-img-wrap">
-      <img src="../images/tech1.jpg" alt="Red Smart Phone">
-    </div>
-    <div class="product-info">
-      <h3 class="product-title">
-        <a href="#">Red Smart Phone</a>
-      </h3>
-      
-      <div class="product-price-row">
-        <span class="price">$590.00</span>
-        <span class="old-price">$1,128.00</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-
-      <div class="product-meta-row">
-        <span class="rating">★★★★★</span>
-        <span class="orders">2.4k orders</span>
-      </div>
-
-      <p class="product-desc">
-        24h battery life, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit.
-      </p>
-      
-      <a href="../details/index.html" class="details-link">View details</a>
-    </div>
-    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-  </article>
-  
-  <article class="product-card">
-    <div class="product-img-wrap">
-      <img src="../images/tech3.jpg" alt="black Smart Phone">
-    </div>
-    <div class="product-info">
-      <h3 class="product-title">
-        <a href="#">Black Smart Phone</a>
-      </h3>
-      
-      <div class="product-price-row">
-        <span class="price">$670.00</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-
-      <div class="product-meta-row">
-        <span class="rating">★★★★★</span>
-        <span class="orders">2.4k orders</span>
-      </div>
-      
-      <p class="product-desc">
-        Great camera quality, Lorem ipsum dolor sit amet consectetur.
-      </p>
-      
-      <a href="#" class="details-link">View details</a>
-    </div>
-    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-  </article>
-  
-  <article class="product-card">
-    <div class="product-img-wrap">
-      <img src="../images/tech2.jpg" alt="Black Tablet">
-    </div>
-    <div class="product-info">
-      <h3 class="product-title">
-        <a href="#">Black Tablet</a>
-      </h3>
-
-      <div class="product-price-row">
-        <span class="price">$430.00</span>
-        <span class="shipping">Free Shipping</span>
-      </div>
-      
-      <div class="product-meta-row">
-        <span class="rating">★★★★★</span>
-        <span class="orders">2.4k orders</span>
-      </div>
-      
-      <p class="product-desc">
-        Large screen, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, laudantium.
-      </p>
-      
-      <a href="#" class="details-link">View details</a>
-    </div>
-    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-  </article>
-  
-  <article class="product-card">
-    <div class="product-img-wrap">
-    <img src="../images/tech7.jpg" alt="Silver Laptop">
+  <div class="filter-bar">
+  <div class="tags">
+    <span class="tag"><i class="fa-solid fa-xmark"></i> Samsung</span>
+    <span class="tag"><i class="fa-solid fa-xmark"></i> Apple</span>
+    <span class="tag"><i class="fa-solid fa-xmark"></i> Poco</span>
+    <span class="tag"><i class="fa-solid fa-xmark"></i> Metallic</span>
+    <span class="tag"><i class="fa-solid fa-xmark"></i> 4 star</span>
+    <span class="tag"><i class="fa-solid fa-xmark"></i> 3 star</span>
+    <a href="#" class="clear-filter">Clear all filter</a>
   </div>
-  <div class="product-info">
-    <h3 class="product-title">
-      <a href="#">Silver Laptop</a>
-    </h3>
-    
-    <div class="product-price-row">
-      <span class="price">$990.99</span>
-      <span class="shipping">Free Shipping</span>
-    </div>
 
-    <div class="product-meta-row">
-      <span class="rating">★★★★★</span>
-      <span class="orders">2.4k orders</span>
-    </div>
-    
-    <p class="product-desc">
-      High Speed, Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, officia
-    </p>
-
-    <a href="#" class="details-link">View details</a>
+  <div class="controls">
+    <button class="view-toggle"><i class="fa-solid fa-border-all"></i></button>
+<button class="view-toggle"><i class="fa-solid fa-list"></i></button>
   </div>
-  <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-</article>
+</div>
 
-<article class="product-card">
-  <div class="product-img-wrap">
-    <img src="../images/tech8.jpg" alt="Smart Watch">
-  </div>
-  <div class="product-info">
-    <h3 class="product-title">
-      <a href="#">Smart Watch, White Band</a>
-    </h3>
-
-    <div class="product-price-row">
-      <span class="price">$108.99</span>
-      <span class="shipping">Free Shipping</span>
-    </div>
-
-    <div class="product-meta-row">
-      <span class="rating">★★★★☆</span>
-      <span class="orders">154 orders</span>
-      <span class="verified">Verified Supplier</span>
-    </div>
-
-    <p class="product-desc">
-      24MP sensor, Wi-Fi ready. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    </p>
-
-    <a href="#" class="details-link">View details</a>
-  </div>
-  <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-</article>
-<article class="product-card">
-    <div class="product-img-wrap">
-      <img src="../images/tech9.jpg" alt="Wireless Earbuds Pro">
-    </div>
+  <div class="product-grid">
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech1.jpg" alt="Product" class="product-img">
     <div class="product-info">
-      <h3 class="product-title">
-        <a href="#">Wireless Earbuds Pro Noise Canceling</a>
-      </h3>
-
-      <div class="product-price-row">
-        <span class="price">$59.00</span>
-        <span class="shipping">Free Shipping</span>
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
       </div>
-
-      <div class="product-meta-row">
-        <span class="rating">★★★★★</span>
-        <span class="orders">3.2k orders</span>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
       </div>
-
-      <p class="product-desc">
-        True wireless Bluetooth 5.3 earbuds with ANC and charging case (24h battery).
-      </p>
-
-      <a href="#" class="details-link">View details</a>
+      <p class="desc">GoPro HERO6 4K Action Camera - Black</p>
     </div>
-    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
-  </article>
-
-
+  </div>
+  <!-- 2 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech4.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">Blue Smart Phone - Great camera quality</p>
+    </div>
+  </div>
+  <!-- 2 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech3.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">Black Smart Phone - Great camera quality</p>
+    </div>
+  </div>
+  <!-- 3 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech2.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">Black Tablet - GoPro HERO6 4K Action Camera</p>
+    </div>
+  </div>
+  <!-- 4 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech7.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">Silver Laptop</p>
+    </div>
+  </div>
+  <!-- 5 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech8.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">Smart Watch, White Band</p>
+    </div>
+  </div>
+  <!-- 5 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech9.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">GoPro HERO6 4K Action Camera - Black</p>
+    </div>
+  </div>
+  <!-- 6 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/tech10.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">GoPro HERO6 4K Action Camera - Black</p>
+    </div>
+  </div>
+  <!-- Repeat .product-card as needed -->
+  <!-- 6 -->
+  <div class="product-card">
+    <div class="product-wishlist"><i class="fa-regular fa-heart"></i></div>
+    <img src="../images/interior10.jpg" alt="Product" class="product-img">
+    <div class="product-info">
+      <div class="price">
+        <strong>$99.50</strong>
+        <span class="original">$128.00</span>
+      </div>
+      <div class="stars">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span>7.5</span>
+      </div>
+      <p class="desc">GoPro HERO6 4K Action Camera - Black</p>
+    </div>
+  </div>
   <!-- Pagination -->
    <div class="pagination-control">
   <label for="show-count">Show</label>
@@ -343,10 +369,9 @@
     <button class="page-btn">3</button>
     <button class="page-btn next">Next ›</button>
   </nav>
-</section>
-
 </div>
 
+</div>
 
   <div class="subscribe">
     <h3>Subscribe to our newsletter</h3>
